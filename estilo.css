@@ -71,8 +71,12 @@ html {
 }
 
 .nav-responsive {
-    background-color: #1cb698;
+    background-color: #23d7de;
     color: #fff;
+    height: 35px;
+    width: 35px;
+    align-content: center;
+    font-size: 17px;
     padding: 5px 10px;
     border-radius: 5px;
     cursor: pointer;
@@ -735,13 +739,14 @@ footer p {
         display: block;
     }
 
-    nav-responsive {
+    nav.responsive {
         display: block;
         position: absolute;
         right: 0;
-        top: 75px;
-        background-color: #252a2e;
-        width: 180px;
+        top: 77px;
+        background: linear-gradient(to top, rgb(184, 184, 184), rgba(255, 255, 255));
+        /*background-color: #252a2e;*/
+        width: 150px;
     }
 
     nav.responsive ul {

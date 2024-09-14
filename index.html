@@ -10,7 +10,7 @@
     <title>Sergio Pérez - Developer</title>
     <link rel="stylesheet" href="estilo.css">
     <script defer src="app.js"></script>
-    <script defer src="script.js"></script>
+
 </head>
 
 <body>
@@ -21,17 +21,17 @@
                 <a href="#">Sergio Pérez</a>
                 <h1>Backend Developer</h1>
             </div>
-            <nav id="nav">
+            <nav id="nav" class="responsive">
                 <ul>
-                    <li><a href="#inicio">Inicio</a></li>
-                    <li><a href="#sobremi">Sobre mí</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#educacion">Educación</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
+                    <li><a href="#inicio" onclick="seleccionar()">Inicio</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">Sobre mí</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">Skills</a></li>
+                    <li><a href="#educacion" onclick="seleccionar()">Educación</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">Portfolio</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">Contacto</a></li>
                 </ul>
             </nav>
-            <div class="nav-responsive">
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
                 <i class="fa-solid fa-bars"></i>
             </div>
         </header>
@@ -328,6 +328,8 @@
         </div>
         <p>© Sergio Andrés Pérez Riaño 2024</p>
     </footer>
+
+    <script src="script.js"></script>
 
 </body>
 

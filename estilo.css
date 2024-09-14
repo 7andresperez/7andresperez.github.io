@@ -262,7 +262,7 @@ html {
 
 .sobremi .contenido-seccion .columna .fila h3 {
     font-size: 27px;
-    text-align: right;
+    text-align: center;
     margin: 0 10px 10px 0;
 }
 
@@ -758,66 +758,150 @@ footer p {
         padding: 10px 0;
     }
 }
-    @media screen and (max-width:700px) {
-        .sobremi .fila {
+
+@media screen and (max-width:700px) {
+    .sobremi .fila {
+        display: block;
+    }
+
+    .sobremi .fila .col {
+        width: fit-content;
+    }
+
+    .skills.fila {
+        display: block;
+    }
+
+    .skills .fila .col {
+        width: 100%;
+    }
+
+    .educacion .fila {
+        display: block;
+    }
+
+    .educacion .fila .col {
+        width: 90%;
+    }
+
+    .educacion .fila .derecha {
+        margin-left: 20px;
+    }
+
+    .portfolio .galeria {
+        display: block;
+        width: 100%;
+    }
+
+    .portfolio .galeria .proyecto {
+        max-width: 100%;
+    }
+
+    .portfolio .galeria .proyecto .img {
+        width: 100%;
+    }
+
+    .contacto .fila {
+        display: block;
+    }
+
+    .contacto .fila .col {
+        width: 100%;
+    }
+
+    /*Responsive creado por mí*/
+    @media screen and (max-width:430px) {
+        .inicio .contenido-seccion {
+            display: block;
+            margin: auto;
+        }
+
+        .inicio .contenido-seccion .contenido-banner {
+            max-width: 250px;
+            margin-bottom: 30px;
+        }
+
+        .inicio .contenido-seccion .contenido-banner img {
+            max-width: 250px;
+        }
+
+        .sobremi .contenido-seccion {
             display: block;
         }
 
-        .sobremi .fila .col {
-            width: fit-content;
+        .sobremi .contenido-seccion .contenedor-img {
+            display: flex;
+            margin-top: 40px;
+            justify-content: center;
+
         }
 
-        .skills.fila {
+        .sobremi .contenido-seccion .contenedor-img img {
+            max-width: 250px;
+
+        }
+
+        .sobremi .contenido-seccion .columna {
             display: block;
-        }
-
-        .skills .fila .col {
-            width: 100%;
-        }
-
-        .educacion .fila {
-            display: block;
-        }
-
-        .educacion .fila .col {
-            width: 90%;
-        }
-
-        .educacion .fila .derecha {
-            margin-left: 20px;
-        }
-
-        .portfolio .galeria {
-            display: block;
-            width: 100%;
-        }
-
-        .portfolio .galeria .proyecto {
             max-width: 100%;
         }
 
-        .portfolio .galeria .proyecto .img {
-            width: 100%;
+        .sobremi .contenido-seccion .columna .fila .contenedor-intereses {
+            justify-content: center;
         }
 
-        .contacto .fila {
+        .sobremi .contenido-seccion .columna .fila h3 {
+            text-align: center;
+        }
+
+        .sobremi .contenido-seccion .columna .fila .contenedor-intereses .interes {
+            width: 70px;
+            height: 70px;
+            text-align: center;
+        }
+
+        .sobremi .contenido-seccion .columna .fila .contenedor-intereses .interes i {
+            width: 60px;
+            height: 60px;
+            font-size: 30px;
+            margin: 10px;
+        }
+
+        .sobremi .contenido-seccion .columna .fila .contenedor-intereses .interes span {
+            font-size: 15px;
+            margin: 0 auto 10px auto;
+        }
+
+        .skills .contenido-seccion .contenedor-skills .skill {
+            width: 100px;
+            height: 100px;
+        }
+
+        .skills .contenido-seccion .contenedor-skills .skill img {
+            width: 40px;
+            height: 40px;
+        }
+
+        .skills .contenido-seccion .contenedor-skills .skill span {
+            font-size: 15px;
+            text-align: center;
+            padding: 0;
+            margin-top: 10px;
+        }
+
+        .educacion .contenido-seccion .educacion-item {
             display: block;
-        }
+            text-align: center;
 
-        .contacto .fila .col {
-            width: 100%;
         }
-
-        @media screen and (max-width:430px) {
-            .inicio .contenido-seccion {
-                display: block;
-            }
-            .sobremi .contenido-seccion {
-                display: block;
-            }
-            .sobremi .contenido-seccion .columna {
-                display: block;
-                max-width: 100%;
-            }
+        .educacion .contenido-seccion .educacion-item .educacion-logo {
+            height: 100px;
+            width: 100px;
+            margin: auto auto 10px auto;
+            justify-content: center;
+        }
+        .educacion .contenido-seccion .educacion-item .educacion-logo:first-child {
+            margin-top: 20px;
         }
     }
+}

@@ -39,17 +39,24 @@ html {
 .contenedor-header header .logo a {
     font-family: 'Questrial';
     font-size: 27px;
-    color: rgb(1, 235, 235);
+    color: #01ebeb;
     text-decoration: none;
     font-weight: bold;
+}
+
+.contenedor-header header .logo a span{
+    color:aqua;
 }
 
 .contenedor-header header .logo h1 {
     font-family: 'Questrial';
     font-size: 19px;
-    color: rgb(1, 192, 192);
+    color: #e6e6e7;
     text-decoration: none;
     font-weight: normal;
+}
+.contenedor-header header .logo h1 span{
+    color:#e6e6e7;
 }
 
 .contenedor-header header ul {
@@ -115,15 +122,13 @@ html {
 }
 
 .inicio .contenedor-img {
-
     align-content: end;
 }
 
 .inicio .contenedor-img img {
     grid-area: contenedor-img;
-    /*margin-top: 40px;*/
-    /*border: 7px solid #e6e6e7;*/
-    border: 7px solid #23d7de;
+    box-shadow: 0 0 10px 3px aqua;
+    border: 5px solid aqua;
     width: 100%;
 }
 
@@ -132,7 +137,6 @@ html {
     font-weight: normal;
     color: #23d7de;
     font-family: monospace;
-    /*color: #1CB698;*/
 }
 
 .inicio .contenido-seccion h1 {
@@ -140,7 +144,6 @@ html {
     font-weight: bold;
     color: #f2f9f9;
     font-family: 'Roboto';
-    /*color: #1CB698;*/
 }
 
 .inicio .contenido-seccion span {
@@ -153,11 +156,12 @@ html {
     color: #e6e6e7;
     font-weight: normal;
     margin-top: 3%;
+    text-align: left;
 }
 
 .inicio .contenido-seccion .informacion-inicio button {
     cursor: pointer;
-    background-color: #23d7de;
+    background-color: #e6e6e7;
     border-radius: 20px;
     border: none;
     width: fit-content;
@@ -171,7 +175,7 @@ html {
 }
 
 .inicio .contenido-seccion .informacion-inicio button:hover {
-    background-color: #e6e6e7;
+    background-color: aqua;
     transition: .5s;
 }
 
